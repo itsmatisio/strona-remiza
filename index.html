@@ -2,65 +2,133 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>remiza.lol</title>
-    <!-- Tailwind CSS for clean layout utility -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background-color: #121212;
-            color: #e4e4e7;
-        }
-    </style>
-</head>
-<body class="min-h-screen flex flex-col justify-between items-center p-4 sm:p-6">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
-    <main class="w-full max-w-2xl mx-auto my-auto text-center py-12">
-        <!-- Logo / Tag -->
-        <div class="inline-block px-3 py-1 bg-zinc-800 text-zinc-400 text-xs font-mono rounded-full mb-6">
-            remiza.lol
-        </div>
-
-        <!-- Main Heading -->
-        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-3">
-            Trwają prace nad stroną
-        </h1>
+    <meta property="og:title" content="remiza.lol" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://remiza.lol" />
+    <meta property="og:description" content="Dołącz do remiza.lol!" />
+    <meta name="theme-color" content="#ff9b24">
         
-        <p class="text-zinc-400 text-base sm:text-lg mb-8 max-w-md mx-auto">
-            Na razie nic tu nie ma. Zapraszamy do śledzenia naszego Discorda oraz odwiedzenia sklepu.
-        </p>
-
-        <!-- Links / Action Buttons -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10 w-full max-w-xs mx-auto">
-            <a href="https://sklep.remiza.lol" target="_blank" rel="noopener noreferrer" 
-               class="w-full px-5 py-2.5 bg-zinc-800 hover:bg-zinc-700 text-white font-medium rounded-lg border border-zinc-700 text-sm transition-colors text-center">
-                Sklep (sklep.remiza.lol)
-            </a>
-            
-            <a href="https://discord.gg/QJJ52429gV" target="_blank" rel="noopener noreferrer" 
-               class="w-full px-5 py-2.5 bg-zinc-100 hover:bg-white text-zinc-900 font-medium rounded-lg text-sm transition-colors text-center">
-                Discord
-            </a>
+    
+    <title>remiza.lol</title>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="header">
+        <div class="logo">
+            <h1>remiza.lol</h1>
         </div>
+        <div class="nav">
+            <h2 class="active">Strona główna</h2>
+            <a href="#tryby"><h2>Tryby</h2></a>
+            <a href="#administracja"><h2>Administracja</h2></a>
+            <a href="regulamin"><h2>Regulamin</h2></a>
+            <button onclick="location.href='https://sklep.remiza.lol'">Sklep</button>
+        </div>
+    </div>
 
-        <!-- NameMC Server Status Widget Container -->
-        <div class="w-full pt-8 border-t border-zinc-800/80">
-            <p class="text-xs text-zinc-500 uppercase tracking-wider mb-4 font-medium">Status serwera</p>
-            <div class="w-full overflow-hidden flex justify-center items-center">
-                <iframe style="width:728px;height:90px;max-width:100%;border:none;display:block;margin:auto" src="https://pl.namemc.com/server/remiza.lol/embed" width="728" height="90" title="Status NameMC remiza.lol"></iframe>
+    <div class="main">
+        <div class="left">
+            <h1>remiza.lol</h1>
+            <h2>Dołącz do naszego community!</h2>
+            <div class="community-actions">
+                <a class="community-button discord-button" href="https://dc.remiza.lol" target="_blank" rel="noopener noreferrer">Dołącz na Discord</a>
+                <button class="community-button copy-button" type="button" data-copy-ip>Skopiuj IP</button>
+            </div>
+            <p class="server-version">Minecraft 1.20–1.26.2</p>
+            <p class="copy-feedback" data-copy-feedback aria-live="polite"></p>
+        </div>
+    </div>
+    
+    <div id="tryby" class="section">
+        <div class="title">
+            <h1>Nasze tryby</h1>
+            <div class="line"></div>
+        </div>
+        <div class="content">
+            <div class="tryb">
+                <div class="title">
+                    <img src="https://static.wikia.nocookie.net/minecraft/images/3/39/EnchantedDiamondPickaxeNew.gif/" alt="Kilof">
+                    <h1>Survival + działki (ekonomia)</h1>
+                </div>
+                <h2>Rozwijaj swoją bazę na własnej działce, zbieraj surowce i buduj bez obaw o zniszczenia.<br>
+                    Handluj z innymi graczami, zarabiaj i rozwijaj się w serwerowej ekonomii.</h2>
+            </div>
+
+        </div>
+    </div>
+
+     
+    <div id="administracja" class="section">
+        <div class="title">
+            <h1>Administracja</h1>
+            <div class="line"></div>
+        </div>
+        <div class="content">
+            <div class="adm">
+                <div class="left">
+                    <img src="https://mc-heads.net/head/Matisio" alt="Głowa gracza Matisio">
+                </div>
+                <div class="right">
+                    <h1>Matisio</h1>
+                    <h2>Właściciel</h2>
+                </div>
+            </div>
+            <div class="adm">
+                <div class="left">
+                    <img src="https://mc-heads.net/head/Szalw" alt="Głowa gracza Szalw">
+                </div>
+                <div class="right">
+                    <h1>Szalw</h1>
+                    <h2>Administrator</h2>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
+    
+    <div class="footer">
+        <h1>remiza.lol</h1>
+    </div>
 
-    <!-- Footer -->
-    <footer class="py-4 text-center text-xs text-zinc-600">
-        &copy; <span id="year"></span> remiza.lol
-    </footer>
+    <div class="creator">
+        <h2><b>ⓒ</b> 2026 <b>remiza.lol</b> — Wszelkie prawa zastrzeżone.</h2>
+    </div>
 
     <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
+    const copyIpButton = document.querySelector('[data-copy-ip]');
+    const copyFeedback = document.querySelector('[data-copy-feedback]');
+
+    copyIpButton.addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText('remiza.lol');
+        } catch (error) {
+            try {
+                const input = document.createElement('textarea');
+                input.value = 'remiza.lol';
+                input.style.position = 'fixed';
+                input.style.opacity = '0';
+                document.body.appendChild(input);
+                input.select();
+                const copied = document.execCommand('copy');
+                input.remove();
+
+                if (!copied) {
+                    throw new Error('Clipboard copy was not successful.');
+                }
+            } catch (fallbackError) {
+                copyFeedback.textContent = 'Nie udało się skopiować. IP serwera: remiza.lol';
+                return;
+            }
+        }
+
+        copyFeedback.textContent = 'Skopiowano IP serwera: remiza.lol';
+    });
+
     </script>
 </body>
 </html>
