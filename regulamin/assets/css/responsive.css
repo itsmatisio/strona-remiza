@@ -1,0 +1,70 @@
+@media (max-width: 760px) {
+    .header {
+        width: calc(100% - 32px);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 14px 0 10px;
+    }
+
+    .header .logo h1 {
+        font-size: 20px;
+    }
+
+    .header .nav {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 4px;
+    }
+
+    .header .nav h2 {
+        padding: 8px 4px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .header .nav button {
+        grid-column: 2 / 4;
+        min-height: 34px;
+        justify-self: center;
+        width: 100%;
+        max-width: 150px;
+        margin-left: 0;
+        padding: 0 12px;
+        font-size: 13px;
+    }
+
+    .main {
+        width: calc(100% - 32px);
+        margin-top: 22px;
+        padding: 26px 20px;
+    }
+
+    .main h3 {
+        padding: 10px 12px;
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .footer {
+        min-height: 88px;
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 420px) {
+    .header .nav h2 {
+        padding: 7px 2px;
+        font-size: 12px;
+    }
+
+    .header .nav button {
+        padding: 0 9px;
+        font-size: 12px;
+    }
+
+    .main {
+        padding: 24px 15px;
+    }
+}
